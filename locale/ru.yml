@@ -1,0 +1,40 @@
+blenderrus-indexnow:
+  admin:
+    settings:
+      intro: >
+        IndexNow сразу сообщает поисковикам, что тема появилась, изменилась или удалена, не дожидаясь следующего
+        обхода. Отправляются только темы, которые видят гости.
+      key_label: Ключ
+      key_help: >
+        От 8 до 128 символов: a-z, A-Z, 0-9 и «-». Форум отдаёт его по адресу {url}; поисковики скачивают файл,
+        чтобы убедиться, что отправки ваши. Пока поле пустое, ничего не отправляется.
+      key_generate: Сгенерировать
+      endpoint_label: Куда отправлять
+      endpoint_help: >
+        Поисковики, поддерживающие IndexNow, передают друг другу все отправки, поэтому достаточно одного.
+      endpoint_options:
+        indexnow: IndexNow.org (для всех поисковиков)
+        bing: Microsoft Bing
+        yandex: Яндекс
+        seznam: Seznam
+        naver: Naver
+        yep: Yep
+        internetarchive: Internet Archive
+        amazonbot: Amazonbot
+        custom: Другой адрес…
+      custom_endpoint_label: Другой адрес
+      custom_endpoint_help: Используется, если выбран «Другой адрес…», например https://example.com/indexnow
+      events_heading: Отправлять, когда
+      submit_discussions_label: Создана тема или одобрено её первое сообщение
+      submit_replies_label: Опубликован или одобрен ответ
+      submit_edits_label: Сообщение изменено, скрыто, восстановлено или удалено, тема переименована или сменила теги
+      submit_removals_label: Тема скрыта, восстановлена или удалена
+      queue_help: >
+        Отправки ставятся в очередь заданий. Со стандартной очередью Flarum «sync» они уходят, пока сохраняется
+        сообщение; фоновая очередь не замедляет публикацию.
+      last_result_heading: Последняя отправка
+      last_result_none: Пока ничего не отправлялось.
+      last_result_status: "{time}: адресов — {count}, {endpoint}, HTTP {status}"
+      last_result_status_accepted: принято
+      last_result_status_pending: принято, ключ проверяется
+      last_result_error: "Ошибка: {error}"

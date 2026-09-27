@@ -1,0 +1,82 @@
+{
+    "name": "blenderrus/flarum-indexnow",
+    "description": "IndexNow for Flarum: tells Bing, Yandex and other search engines about new, changed and removed discussions.",
+    "keywords": [
+        "flarum",
+        "flarum-extension",
+        "indexnow",
+        "seo",
+        "bing",
+        "yandex"
+    ],
+    "type": "flarum-extension",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Grigoriy Skidan",
+            "email": "sub7blender@gmail.com",
+            "homepage": "https://github.com/BlenderRUS",
+            "role": "Developer"
+        }
+    ],
+    "homepage": "https://github.com/BlenderRUS/flarum-indexnow",
+    "support": {
+        "issues": "https://github.com/BlenderRUS/flarum-indexnow/issues",
+        "source": "https://github.com/BlenderRUS/flarum-indexnow"
+    },
+    "require": {
+        "php": "^8.3",
+        "flarum/core": "^2.0.0",
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "require-dev": {
+        "flarum/approval": "^2.0.0",
+        "flarum/phpstan": "^2.0.0",
+        "flarum/tags": "^2.0.0",
+        "flarum/testing": "^2.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "BlenderRUS\\IndexNow\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "BlenderRUS\\IndexNow\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "IndexNow",
+            "category": "feature",
+            "icon": {
+                "name": "fas fa-satellite-dish",
+                "color": "#fff",
+                "backgroundColor": "#2563eb"
+            }
+        }
+    },
+    "scripts": {
+        "analyse:phpstan": "phpstan analyse",
+        "clear-cache:phpstan": "phpstan clear-result-cache",
+        "test": [
+            "@test:unit",
+            "@test:integration"
+        ],
+        "test:unit": "phpunit -c tests/phpunit.unit.xml",
+        "test:integration": "phpunit -c tests/phpunit.integration.xml",
+        "test:setup": "@php tests/integration/setup.php"
+    },
+    "scripts-descriptions": {
+        "analyse:phpstan": "Run static analysis",
+        "test": "Run all tests.",
+        "test:unit": "Run unit tests.",
+        "test:integration": "Run integration tests.",
+        "test:setup": "Set up a database for integration tests."
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "beta",
+    "prefer-stable": true
+}

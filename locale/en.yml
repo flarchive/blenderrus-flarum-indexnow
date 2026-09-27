@@ -1,0 +1,40 @@
+blenderrus-indexnow:
+  admin:
+    settings:
+      intro: >
+        IndexNow tells search engines right away that a discussion appeared, changed or was removed, instead of
+        waiting for the next crawl. Only discussions that guests can see are submitted.
+      key_label: Key
+      key_help: >
+        8 to 128 characters: a-z, A-Z, 0-9 and "-". The forum serves it at {url}; engines download it to check
+        that the submissions are yours. Submissions are off while the field is empty.
+      key_generate: Generate
+      endpoint_label: Send to
+      endpoint_help: >
+        Engines that support IndexNow share every submission with each other, so one is enough.
+      endpoint_options:
+        indexnow: IndexNow.org (shared with all engines)
+        bing: Microsoft Bing
+        yandex: Yandex
+        seznam: Seznam
+        naver: Naver
+        yep: Yep
+        internetarchive: Internet Archive
+        amazonbot: Amazonbot
+        custom: Other address…
+      custom_endpoint_label: Other address
+      custom_endpoint_help: Used when "Other address…" is selected, e.g. https://example.com/indexnow
+      events_heading: Submit when
+      submit_discussions_label: A discussion is started or its first post is approved
+      submit_replies_label: A reply is posted or approved
+      submit_edits_label: A post is edited, hidden, restored or deleted, or the discussion is renamed or retagged
+      submit_removals_label: A discussion is hidden, restored or deleted
+      queue_help: >
+        Submissions are queued jobs. With Flarum's default "sync" queue they are sent while the post is being
+        saved; a background queue keeps posting fast.
+      last_result_heading: Last submission
+      last_result_none: Nothing has been submitted yet.
+      last_result_status: "{time}: {count} address(es) to {endpoint}, HTTP {status}"
+      last_result_status_accepted: accepted
+      last_result_status_pending: accepted, the key is being checked
+      last_result_error: "Error: {error}"
