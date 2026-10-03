@@ -2,13 +2,13 @@
 
 > **Read-only archive of released versions of blenderrus/flarum-indexnow.** Not for installation: use [Packagist](https://packagist.org/packages/blenderrus/flarum-indexnow) or the [upstream repository](https://github.com/BlenderRUS/flarum-indexnow).
 
-**0** versions archived · Latest: [`v1.0.2`](https://github.com/flarchive/blenderrus-flarum-indexnow/tree/archive/v1.0.2) · License: `MIT` · Flarum: `^2.0.0`
+**1** versions archived · Latest: [`v1.0.2`](https://github.com/flarchive/blenderrus-flarum-indexnow/tree/archive/v1.0.2) · License: `MIT` · Flarum: `^2.0.0`
 
 ## Archived Versions
 
 | Version | Released | Flarum | Source |
 |---|---|---|---|
-| — | — | — | — |
+| `v1.0.2` | 2026-09-27 | `^2.0.0` | [Browse](https://github.com/flarchive/blenderrus-flarum-indexnow/tree/archive/v1.0.2) |
 
 Catalog entry: [packages/blenderrus-flarum-indexnow.json](https://github.com/flarchive/archive-index/blob/main/packages/blenderrus-flarum-indexnow.json)
 
